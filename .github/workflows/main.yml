@@ -3,6 +3,8 @@ name: CI/CD Pipeline
 on:
   push:
     branches: [ main, development, release ]
+    tags:
+      - 'v*'   # <— добавляем эту строку, чтобы запускалось при тегах
   pull_request:
     branches: [ main ]
 
