@@ -1,2 +1,1 @@
-# praktika2_cicd
-pr2 TITOV MIREA
+# Release v1.0 — стабильная версия проекта
