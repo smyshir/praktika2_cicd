@@ -1,2 +1,1 @@
-def feature_sum(a, b): return a + b
-def feature_multiply(a, b): return a * b
+def add(a, b):\n    return a + b\n\ndef multiply(a, b):\n    return a * b
