@@ -33,7 +33,7 @@ jobs:
       - name: Generate documentation
         run: |
           mkdir -p docs
-          pdoc . -o docs
+          pdoc $(ls *.py | tr '\n' ' ') -o docs
           echo "📘 Documentation generated successfully."
 
       - name: Upload documentation artifact
