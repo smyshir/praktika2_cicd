@@ -33,8 +33,14 @@ jobs:
       - name: Generate documentation
         run: |
           mkdir -p docs
-          pdoc --html . -o docs
+          pdoc --output-dir docs .
           echo "📘 Documentation generated successfully."
+
+      - name: Upload documentation artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: documentation
+          path: docs/
 
   # --- CD: деплой после успешных тестов ---
   deploy:
