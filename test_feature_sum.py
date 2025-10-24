@@ -1,8 +1,7 @@
-from feature_sum import feature_sum
+from feature_sum import add, multiply
 
-def test_feature_sum():
-    assert feature_sum(2, 3) == 5
-from feature_sum import feature_multiply
+def test_add():
+    assert add(2, 3) == 5
 
-def test_feature_multiply():
-    assert feature_multiply(2, 3) == 6
+def test_multiply():
+    assert multiply(2, 4) == 8
