@@ -9,7 +9,7 @@ on:
     branches: [ main ]
 
 jobs:
-  # --- CI: сборка и тестирование ---
+  # --- CI: сборка, тестирование и документация ---
   build:
     runs-on: ubuntu-latest
 
@@ -33,7 +33,7 @@ jobs:
       - name: Generate documentation
         run: |
           mkdir -p docs
-          pdoc --output-dir docs .
+          pdoc feature_sum test_feature_sum -o docs
           echo "📘 Documentation generated successfully."
 
       - name: Upload documentation artifact
